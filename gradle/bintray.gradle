@@ -18,6 +18,9 @@ allprojects {
                 username = project.hasProperty('bintrayUser') ? project.bintrayUser : System.getenv('BINTRAY_USER')
                 password = project.hasProperty('bintrayKey') ? project.bintrayKey : System.getenv('BINTRAY_KEY')
             }
+            defaults {
+                publishIvy = false
+            }
         }
     }
 }
